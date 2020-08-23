@@ -1,5 +1,7 @@
-let claculateGrade = function (studentScore, maxScore) {
-  let studentPercentage = (studentScore / maxScore) * 100;
+// modified from a challenge in const.js chapter.
+
+const claculateGrade = function (studentScore, maxScore) {
+  const studentPercentage = ((studentScore / maxScore) * 100).toFixed(2);
   let studentGrade = "";
   if (studentPercentage >= 90) {
     studentGrade = "A";
@@ -13,8 +15,7 @@ let claculateGrade = function (studentScore, maxScore) {
     studentGrade = "F";
   }
 
-  return `${studentScore /
-    maxScore} -> You got a ${studentGrade} (${studentPercentage})`;
+  return `${studentScore} / ${maxScore} -> You got a ${studentGrade} (${studentPercentage})`;
 };
 
 console.log(claculateGrade(97, 100));
