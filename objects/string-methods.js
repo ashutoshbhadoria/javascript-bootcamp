@@ -1,12 +1,16 @@
 let name = "Ashutosh Bhadoria";
 
+// length.
 console.log(name.length);
 
+// Case related.
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 
+// trimming whitespaces.
 console.log("  Ashutosh Bhadoria    ".trim());
 
+// Check if a substring exists.
 console.log("123passwordsadsde3".includes("password"));
 
 // Password valid challenge.
